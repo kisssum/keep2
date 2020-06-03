@@ -1,0 +1,181 @@
+#end {
+    background-color: #000000;
+    padding-bottom: 5px;
+}
+
+#end a {
+    text-decoration: none;
+}
+
+/* ul */
+#end #end_u1 {
+    margin: 0 auto;
+
+    width: 70%;
+    height: 160px;
+
+    text-align: center;
+    list-style: none;
+}
+
+#end #end_u1 li {
+    margin-left: 4%;
+
+    width: 15%;
+
+    float: left;
+}
+
+#end #end_u1 li .end_p1 {
+    font-size: 24px;
+    color: white;
+}
+
+#end #end_u1 li p {
+    margin-top: 10%;
+
+    font-size: 16px;
+    color: #999;
+}
+
+#end #end_u1 li a p {
+    transition: .5s;
+}
+
+#end #end_u1 li a p:hover {
+    color: pink;
+}
+
+#end #end_u1 li:last-child div {
+    width: 100%;
+
+    background: #666;
+    border-radius: 9px;
+}
+
+#end #end_u1 li:last-child div p {
+    line-height: 30px;
+    color: white;
+}
+
+/* hzhb */
+#end #hzhb p {
+    margin-top: 2%;
+    color: white;
+    text-align: center;
+    font-size: 20px;
+}
+
+#end #hzhb ul {
+    margin: 1% auto;
+
+    width: 60%;
+    height: 130px;
+
+    list-style: none;
+}
+
+#end #hzhb ul li {
+    margin-left: 8%;
+    margin-top: 2%;
+
+    float: left;
+
+    width: 50px;
+    height: 50px;
+}
+
+#end #hzhb ul li:nth-child(1) {
+    background: url(../images/hzdx/weiruan.png);
+    background-size: 50px 50px;
+}
+
+#end #hzhb ul li:nth-child(2) {
+    background: url(../images/hzdx/guge.png);
+    background-size: 50px 50px;
+}
+
+#end #hzhb ul li:nth-child(3) {
+    background: url(../images/hzdx/pingguo.png);
+    background-size: 50px 50px;
+}
+
+#end #hzhb ul li:nth-child(4) {
+    background: url(../images/hzdx/intel.png);
+    background-size: 50px 50px;
+}
+
+#end #hzhb ul li:nth-child(5) {
+    background: url(../images/hzdx/AMD.png);
+    background-size: 50px 50px;
+}
+
+#end #hzhb ul li:nth-child(6) {
+    background: url(../images/hzdx/huipu.png);
+    background-size: 50px 50px;
+}
+
+#end #hzhb ul li:nth-child(7) {
+    background: url(../images/hzdx/xiaomi.png);
+    background-size: 50px 50px;
+}
+
+#end #hzhb ul li:nth-child(8) {
+    background: url(../images/hzdx/ibm.png);
+    background-size: 50px 50px;
+}
+
+#end #hzhb ul li:nth-child(9) {
+    background: url(../images/hzdx/huawei.png);
+    background-size: 50px 50px;
+}
+
+#end #hzhb ul li:nth-child(10) {
+    background: url(../images/hzdx/yamaxun.png);
+    background-size: 50px 50px;
+}
+
+#end #hzhb ul li:nth-child(11) {
+    background: url(../images/hzdx/tengxun.png);
+    background-size: 50px 50px;
+}
+
+#end #hzhb ul li:nth-child(12) {
+    background: url(../images/hzdx/ali.png);
+    background-size: 50px 50px;
+}
+
+#end #hzhb ul li:nth-child(13) {
+    background: url(../images/hzdx/nvidia.png);
+    background-size: 50px 50px;
+}
+
+#end #hzhb ul li:nth-child(14) {
+    background: url(../images/hzdx/daier.png);
+    background-size: 50px 50px;
+}
+
+#end #u3 {
+    margin: 2% auto;
+
+    width: 60%;
+    height: 20px;
+
+    color: #777;
+
+    list-style: none;
+}
+
+#end #u3 li {
+    margin-right: 6%;
+
+    float: left;
+}
+
+#end #u3 li:nth-child(1) {
+    margin-right: 80px
+}
+
+#end #u3 li a {
+    color: #777;
+}
