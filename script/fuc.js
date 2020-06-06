@@ -17,10 +17,6 @@ function jump() {
     $('#jump')[0].style.display = "block"
 }
 
-function jump_enter() {
-    alert("yes")
-}
-
 function bd_cancel() {
     $('#jump')[0].style.display = "none"
 
@@ -38,10 +34,6 @@ function bd_cancel() {
     $('#RePasswd')[0].value = ""
     $('#RePasswd')[0].style.border = ""
     $('#RePasswdTip')[0].innerHTML = ""
-}
-
-function goTop() {
-    document.documentElement.scrollTop = 0
 }
 
 function bd() {

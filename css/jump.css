@@ -1,10 +1,10 @@
 #jump {
     position: fixed;
-    top: 15%;
+    top: 20%;
     left: 25%;
 
     width: 50%;
-    height: 70%;
+    height: 50%;
 
     border-radius: 90px;
     border: solid 2px white;
