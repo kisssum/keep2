@@ -2,6 +2,7 @@ function timeAll() {
     setInterval(timeChange, 100);
     jsqc()
 }
+
 function timeChange() {
     // video_gf panel height 
     $('#video_fg')[0].style.height = $('#video_mp4')[0].clientHeight + 'px'
