@@ -7,12 +7,6 @@ function timeChange() {
     // video_gf panel height 
     $('#video_fg')[0].style.height = $('#video_mp4')[0].clientHeight + 'px'
 
-    // ydff panel height 
-    $('#ydff')[0].style.height = $('#ydff ul')[0].clientHeight + 800 + 'px'
-
-    // jsqc panel height 
-    $('#jsqc')[0].style.height = $('#jsqc-img')[0].clientHeight + 200 + 'px'
-
     // xfc panel height 
     $('#xfc')[0].style.marginTop = document.documentElement.clientHeight / 2 - 100 + 'px'
 
