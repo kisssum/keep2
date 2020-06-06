@@ -30,7 +30,7 @@ window.onload = () => {
         let img = $('#jsqc-img')[0]
         let lis = $('#jsqc-u2 li')
 
-        if (count == 6)
+        if (count == lis.length)
             count = 1;
         else
             count++;
@@ -39,9 +39,15 @@ window.onload = () => {
         img.style.backgroundImage = 'url(' + url + ')'
 
         for (let i = 0; i < lis.length; i++)
-            if (i == count - 1)
-                lis[i].style.backgroundColor = 'rgba(0,255,255,.5)'
-            else
-                lis[i].style.backgroundColor = 'rgba(255,255,255,.5)'
+            if (i == count - 1) {
+                lis[i].style.backgroundColor = 'rgba(255,0,0,.7)'
+                lis[i].style.border = 'solid 1px rgba(255,0,0,.7)'
+            } else {
+                lis[i].style.backgroundColor = 'rgba(255,255,255,.4)'
+                lis[i].style.border = 'solid 1px orange'
+            }
     }
+
+    // bd
+    bd()
 }

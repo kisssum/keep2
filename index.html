@@ -13,9 +13,13 @@
     <link rel="stylesheet" href="css/ydff.css">
     <link rel="stylesheet" href="css/jsqc.css">
     <link rel="stylesheet" href="css/nuli.css">
+    <link rel="stylesheet" href="css/jump.css">
     <link rel="stylesheet" href="css/end.css">
     <link rel="stylesheet" href="css/xfc.css">
-    <script src="css/jquery-3.4.1/jquery-3.4.1.min.js"></script>
+    <link rel="stylesheet" href="css/goTop.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.js"
+        integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+
     <script src="script/fuc.js"></script>
     <script src="script/onload.js"></script>
     <script src="script/onscroll.js"></script>
@@ -170,13 +174,45 @@
 
             <div class="yes">
                 <div id="yes-1">
-                    <a href="">加入我们!</a>
+                    <a href="javascript:jump()">加入我们!</a>
                 </div>
             </div>
 
         </div>
     </div>
 
+    <div id="jump">
+        <form id="bd" action="https://www.kisssum.cf/keep2" method="get" onsubmit="return checkout()">
+            <table>
+                <tr>
+                    <td>用户名:</td>
+                    <td><input id="UserName" type="text"></td>
+                    <td id="UserNameTip"></td>
+                </tr>
+
+                <tr>
+                    <td>密码:</td>
+                    <td><input id="Passwd" type="password"></td>
+                    <td id="PasswdTip"></td>
+                </tr>
+
+                <tr>
+                    <td>确认密码:</td>
+                    <td><input id="RePasswd" type="password"></td>
+                    <td id="RePasswdTip"></td>
+                </tr>
+            </table>
+
+            <ul>
+                <li>
+                    <input type="submit" value="登入">
+                </li>
+                <li>
+                    <input type="button" value="取消" onclick="bd_cancel()">
+                </li>
+            </ul>
+        </form>
+    </div>
 
     <div id="end">
         <div id="end_kj">
@@ -289,6 +325,10 @@
                 <li><img src="./images/xfc/qq_black.png" alt=""></li>
             </a>
         </ul>
+    </div>
+
+    <div id="goTop" onclick="goTop()">
+        <span>回到顶部</span>
     </div>
 
 </body>
