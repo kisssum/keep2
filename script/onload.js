@@ -6,4 +6,6 @@ window.onload = () => {
 
     // bd
     bd()
+
+    xfc()
 }

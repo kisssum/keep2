@@ -4,26 +4,36 @@
     top: 0;
 
     width: 50px;
-    height: 200px;
-    background: white;
+    height: 180px;
+    background: rgba(255, 255, 255, .5);
 
     border-top-right-radius: 9px;
     border-bottom-right-radius: 9px;
     box-shadow: 2px 2px 10px 2px #ccc;
+
+    transition: .5s;
 }
 
 #xfc ul li {
-    margin-top: 5px;
-
     list-style: none;
+
     width: 100%;
     height: 45px;
+
     line-height: 40px;
 
     transition: .3s;
 }
 
-#xfc ul a li img {
+#xfc ul li:first-child {
+    border-top-right-radius: 9px;
+}
+
+#xfc ul li:last-child {
+    border-bottom-right-radius: 9px;
+}
+
+#xfc ul li img {
     margin-left: 4px;
     width: 40px;
 }

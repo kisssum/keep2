@@ -103,3 +103,34 @@ function checkout() {
         return false
     }
 }
+
+function xfc() {
+    let xfc = $('#xfc')[0]
+    let lis = $('#xfc li')
+    let imgs = $('#xfc img')
+
+    for (let i = 0; i < imgs.length; i++)
+        imgs[i].src = './images/xfc/' + i + '_black.png'
+
+    // xfc
+    xfc.onmouseover = function () {
+        this.style.backgroundColor = 'rgba(0,0,0,.7)'
+        for (let i = 0; i < imgs.length; i++)
+            imgs[i].src = './images/xfc/' + i + '_white.png'
+    }
+    xfc.onmouseout = function () {
+        this.style.backgroundColor = 'rgba(255,255,255,.5)'
+        for (let i = 0; i < imgs.length; i++)
+            imgs[i].src = './images/xfc/' + i + '_black.png'
+    }
+
+    for (let i = 0; i < lis.length; i++) {
+        lis[i].id = i
+        lis[i].onmouseover = function () {
+            this.style.backgroundColor = 'rgba(0,255,255,.7)'
+        }
+        lis[i].onmouseout = function () {
+            this.style.backgroundColor = ''
+        }
+    }
+}
