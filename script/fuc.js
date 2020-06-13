@@ -7,7 +7,7 @@ function Search() {
         '360': 'https://www.so.com/s?q='
     }
 
-    yqtop = $('#top_right span')[0].innerHTML
+    yqtop = $('#top_right a')[0].innerHTML
     text = $('#top_right input')[0].value
     if (text != '')
         window.open(yq[yqtop] + text, '_blank')
@@ -105,32 +105,21 @@ function checkout() {
 }
 
 function xfc() {
-    let xfc = $('#xfc')[0]
     let lis = $('#xfc li')
     let imgs = $('#xfc img')
 
     for (let i = 0; i < imgs.length; i++)
         imgs[i].src = './images/xfc/' + i + '_black.png'
 
-    // xfc
-    xfc.onmouseover = function () {
-        this.style.backgroundColor = 'rgba(0,0,0,.7)'
-        for (let i = 0; i < imgs.length; i++)
-            imgs[i].src = './images/xfc/' + i + '_white.png'
-    }
-    xfc.onmouseout = function () {
-        this.style.backgroundColor = 'rgba(255,255,255,.5)'
-        for (let i = 0; i < imgs.length; i++)
-            imgs[i].src = './images/xfc/' + i + '_black.png'
-    }
-
     for (let i = 0; i < lis.length; i++) {
         lis[i].id = i
         lis[i].onmouseover = function () {
-            this.style.backgroundColor = 'rgba(0,255,255,.7)'
+            this.style.backgroundColor = 'rgba(0,0,0,.7)'
+            imgs[i].src = './images/xfc/' + i + '_white.png'
         }
         lis[i].onmouseout = function () {
             this.style.backgroundColor = ''
+            imgs[i].src = './images/xfc/' + i + '_black.png'
         }
     }
 }

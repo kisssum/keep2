@@ -55,13 +55,15 @@
 }
 
 /* top_right */
-#top #top_right span {
+#top #top_right a {
     margin-left: 11%;
     line-height: 250%;
 
     color: white;
+
     font-size: 24px;
     font-weight: bold;
+    text-decoration: none;
 }
 
 #top #top_right input {

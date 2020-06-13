@@ -30,7 +30,7 @@
 }
 
 #xfc ul li:last-child {
-    border-bottom-right-radius: 9px;
+    /* border-bottom-right-radius: 9px; */
 }
 
 #xfc ul li img {
