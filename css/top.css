@@ -44,8 +44,16 @@
     transition: .5s;
 }
 
+#top #top_left li:first-child {
+    margin-right: 0;
+}
+
 #top #top_left li:hover {
     border-top: solid 2px white;
+}
+
+#top #top_left li:first-child:hover {
+    border-top: solid 2px rgba(0, 0, 0, 0);
 }
 
 #top #top_left li a {
