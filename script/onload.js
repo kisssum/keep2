@@ -9,17 +9,33 @@ window.onload = () => {
 
     xfc()
 
-    // 判断是否按下F12，F12键码为123  
-    window.onkeydown = window.onkeyup = window.onkeypress = function (event) {
-        if (event.keyCode = 123) {
-            event.preventDefault(); // 阻止默认事件行为  
-            window.event.returnValue = false;
-        }
-    }
-    console.log('no body!')
-
     // 右键自定义事件
     window.oncontextmenu = function () {
         return false;
     }
+
+    let lastTop = 0
+    $(window).scroll(() => {
+        let top = document.documentElement.scrollTop
+        let clientHeight = document.documentElement.clientHeight
+        let totalHeight = document.documentElement.scrollHeight
+
+        // 左xfc
+        let xfc = $('#xfc')[0]
+        if (top < clientHeight / 2)
+            xfc.style.left = '-45px'
+        else if (top + clientHeight >= totalHeight - 100)
+            xfc.style.left = '-45px'
+        else
+            xfc.style.left = '0'
+
+        // topBar
+        let topBar = $('#top')[0]
+        if (top > lastTop)
+            topBar.style.top = "-7%"
+        else
+            topBar.style.top = "0"
+
+        lastTop = top
+    })
 }

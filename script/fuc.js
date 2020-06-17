@@ -4,7 +4,8 @@ function Search() {
         '谷歌': 'https://www.google.com.hk/search?q=',
         '百度': 'https://www.baidu.com/s?wd=',
         'Doge': 'https://www.dogedoge.com/results?q=',
-        '360': 'https://www.so.com/s?q='
+        '360': 'https://www.so.com/s?q=',
+        '搜狗': 'https://www.sogou.com/web?query='
     }
 
     yqtop = $('#top_right a')[0].innerHTML
