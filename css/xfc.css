@@ -29,10 +29,6 @@
     border-top-right-radius: 9px;
 }
 
-#xfc ul li:last-child {
-    /* border-bottom-right-radius: 9px; */
-}
-
 #xfc ul li img {
     margin-left: 4px;
     width: 40px;
