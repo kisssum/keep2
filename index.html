@@ -180,33 +180,35 @@
     </div>
 
     <div id="jump">
-        <form id="bd" action="nextPage/index.html" method="get" onsubmit="return checkout()">
-            <table>
-                <tr>
-                    <td>用户名:</td>
-                    <td><input id="UserName" type="text"></td>
-                    <td id="UserNameTip"></td>
-                </tr>
-
-                <tr>
-                    <td>密码:</td>
-                    <td><input id="Passwd" type="password"></td>
-                    <td id="PasswdTip"></td>
-                </tr>
-
-                <tr>
-                    <td>确认密码:</td>
-                    <td><input id="RePasswd" type="password"></td>
-                    <td id="RePasswdTip"></td>
-                </tr>
-            </table>
-
+        <form novalidate class="contact_form" action="nextPage/index.html" method="GET" name="contact_form"
+            onsubmit="return checkout()">
             <ul>
                 <li>
-                    <input type="submit" value="登入">
+                    <h2>联系我们</h2>
                 </li>
                 <li>
-                    <input type="button" value="取消" onclick="bd_cancel()">
+                    <label for="name">姓名:</label>
+                    <input id="jname" type="text" name="name" placeholder="Javin" required>
+                </li>
+                <li>
+                    <label for="email">Emial:</label>
+                    <input id="jemial" type="email" name="email" placeholder="javin@example.com" required />
+                    <span class="form_hint">正确格式为：javin@example.com</span>
+                </li>
+                <li>
+                    <label for="website">网站:</label>
+                    <input id="jwebsite" type="url" name="website" placeholder="http://www.jiawin.com" required
+                        pattern="(http|https)://.+" />
+                    <span class="form_hint">正确格式为：http://www.jiawin.com</span>
+                </li>
+                <li>
+                    <label for="message">留言:</label>
+                    <textarea id="jmsg" name="message" cols="40" rows="6" required></textarea>
+                </li>
+                <li>
+                    <button class="submit" type="submit">提交</button>
+                    <button class="close" type="button" onclick="bd_cancel()">取消</button>
+                    <button class="cx" type="button" onclick="bd_clear()">重写</button>
                 </li>
             </ul>
         </form>

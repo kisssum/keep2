@@ -4,9 +4,6 @@ window.onload = () => {
     // click All
     clickAll()
 
-    // bd
-    bd()
-
     xfc()
 
     // 右键自定义事件
