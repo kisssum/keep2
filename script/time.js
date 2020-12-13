@@ -18,58 +18,29 @@ function timeChange() {
 }
 
 function jsqc() {
-    let count = 1
-    let img = $('#jsqc-img')[0]
-    let lis = $('#jsqc-u2 li')
+    let place = 0
 
-    let lisCheckBg = 'rgba(255,0,0,.7)'
-    let lisCheckBorder = 'solid 1px rgba(255,0,0,.7)'
-    let lisUnCheckBg = 'rgba(255,255,255,.4)'
-    let lisUnCheckBorder = 'solid 1px orange'
-
-    let time = setInterval(times, 3000)
-
-    function times() {
-        if (count == lis.length)
-            count = 1;
-        else
-            count++;
-
-        url = './images/jsqc/p' + count + '.png'
-        img.style.backgroundImage = 'url(' + url + ')'
-
-        for (let i = 0; i < lis.length; i++)
-            if (i == count - 1) {
-                lis[i].style.backgroundColor = lisCheckBg
-                lis[i].style.border = lisCheckBorder
-            } else {
-                lis[i].style.backgroundColor = lisUnCheckBg
-                lis[i].style.border = lisUnCheckBorder
+    setInterval(() => {
+        place -= 1200
+        $('#imgBoxList').animate({
+            marginLeft: place + 'px'
+        }, 1000, () => {
+            if (place <= -6000) {
+                place = 0
+                $('#imgBoxList').css({
+                    marginLeft: place
+                })
             }
-    }
 
-    // click
-    for (let i = 0; i < lis.length; i++) {
-        lis[i].id = i
-        lis[i].onclick = function () {
-            for (let j = 0; j < lis.length; j++)
-                if (this.id == j) {
-                    // img
-                    count = j + 1
-                    url = './images/jsqc/p' + count + '.png'
-                    img.style.backgroundImage = 'url(' + url + ')'
+            $('#imgBox>ul>li').removeClass("active")
+            $('#imgBox>ul>li').eq(parseInt(place / -1200)).addClass("active")
+        })
+    }, 2000)
 
-                    // lis
-                    lis[j].style.backgroundColor = lisCheckBg
-                    lis[j].style.border = lisCheckBorder
-
-                    // repeat while
-                    clearInterval(time)
-                    time = setInterval(times, 3000)
-                } else {
-                    lis[j].style.backgroundColor = lisUnCheckBg
-                    lis[j].style.border = lisUnCheckBorder
-                }
-        }
-    }
+    for (let i = 0; i < 5; i++)
+        $('#imgBox>ul>li').eq(i).click(() => {
+            place = -1200 * i
+            $('#imgBox>ul>li').removeClass("active")
+            $('#imgBox>ul>li').eq(parseInt(place / -1200)).addClass("active")
+        })
 }

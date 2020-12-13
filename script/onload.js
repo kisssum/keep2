@@ -1,4 +1,4 @@
-window.onload = () => {
+$(()=>{
     timeAll()
 
     // click All
@@ -7,7 +7,7 @@ window.onload = () => {
     xfc()
 
     // 右键自定义事件
-    window.oncontextmenu = function () {
+    window.oncontextmenu = () => {
         return false;
     }
 
@@ -35,4 +35,4 @@ window.onload = () => {
 
         lastTop = top
     })
-}
+})
